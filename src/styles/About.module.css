@@ -1,0 +1,17 @@
+.content_box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 380px;
+  justify-content: space-between;
+}
+
+.codedby{
+  font-weight: 600;
+}
+
+.spannihil a:hover {
+  color: var(--azulzin);
+  font-weight: 600;
+
+}

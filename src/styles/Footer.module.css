@@ -1,0 +1,16 @@
+.footer_box{
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.685)
+  ;
+}
+
+.footer_text{
+  color: var(--brancoleve);
+}
+
+.footer_span{
+  font-weight: 700;
+  color: var(--brancoleve);
+}
