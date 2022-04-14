@@ -20,7 +20,7 @@
   background-color: transparent;
   border: 1px solid var(--vermelho);
   border-radius: 5px;
-  padding: 5px;
+  padding: 1px 6px;
   color: var(--brancoleve);
   text-shadow: 1px 1px 1px var(--pretin);
   cursor: pointer;
@@ -36,6 +36,8 @@
 }
 
 .button_box:focus{
+  color: var(--brancoleve);
+
   background-color: var(--vermelho);
   font-weight: 600;
   

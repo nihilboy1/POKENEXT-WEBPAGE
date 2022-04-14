@@ -27,6 +27,7 @@
   font-weight: 600;
   text-decoration: none;
   color: var(--brancoleve);
+  font-size: 0.8rem;
 }
 
 .link_item a:hover {
@@ -45,7 +46,7 @@
   align-items: center;
   padding: 10px;
   gap: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 0px;
 }
 
 .pokeimg {
@@ -54,7 +55,7 @@
 
 .title {
   color: var(--brancoleve);
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   font-weight: 700;
 }
 
@@ -76,6 +77,6 @@
 
   .link_item a {
     padding: 2px 5px;
-    font-size: 0.9rem;
+    font-size: 0.7rem;
   }
 }
