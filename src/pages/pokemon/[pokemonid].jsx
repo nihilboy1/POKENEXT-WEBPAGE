@@ -34,7 +34,6 @@ export async function getStaticProps(context) {
 }
 
 const PokemonId = props => {
-  console.log(props.pokemon)
   return (
     <div className={styles.details_box}>
       <div className={styles.image_box}>
@@ -54,13 +53,23 @@ const PokemonId = props => {
           Type:
           {props.pokemon.types.map((item, index) => {
             if (item) {
-              return <p className={`${styles.type} ${styles["type_" + item.type.name]}` } key={index}>{item.type.name}</p>
+              return (
+                <p
+                  className={`${styles.type} ${
+                    styles['type_' + item.type.name]
+                  }`}
+                  key={index}
+                >
+                  {item.type.name}
+                </p>
+              )
             }
           })}
         </p>
         <p className={styles.poke_stats}>Height: {props.pokemon.height}0cm</p>
-        <p className={styles.poke_stats}>Weight: {props.pokemon.weight / 10}kg</p>
-
+        <p className={styles.poke_stats}>
+          Weight: {props.pokemon.weight / 10}kg
+        </p>
       </div>
     </div>
   )

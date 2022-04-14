@@ -1,0 +1,51 @@
+.pagination_box{
+  display: flex;
+  gap: 5px;
+  padding: 5px;
+  border-radius: 5px;
+  position: fixed;
+  top: 135px;
+  left: 10px;
+  z-index: 1;
+  align-items: center;
+}
+
+.span_box{
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.button_box{
+  background-color: transparent;
+  border: 1px solid var(--vermelho);
+  border-radius: 5px;
+  padding: 5px;
+  color: var(--brancoleve);
+  text-shadow: 1px 1px 1px var(--pretin);
+  cursor: pointer;
+  font-size: 0.7rem;
+
+}
+
+.button_box:hover{
+  color: var(--pretin);
+  text-shadow: 2px 2px 1px var(--bancoleve);
+  background-color: var(--vermelho);
+  font-weight: 600;
+}
+
+.button_box:focus{
+  background-color: var(--vermelho);
+  font-weight: 600;
+  
+}
+
+@media screen and (max-width: 350px) {
+
+  .pagination_box{
+    flex-direction: column;
+    padding: 0;
+    left: 5px;
+  }
+}
