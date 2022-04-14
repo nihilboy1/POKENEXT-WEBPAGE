@@ -41,7 +41,7 @@
   
 }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 390px) {
 
   .pagination_box{
     flex-direction: column;
