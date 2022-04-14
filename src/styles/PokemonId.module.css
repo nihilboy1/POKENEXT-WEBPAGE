@@ -116,3 +116,15 @@
 .type_fairy {
   background-color: #e9e;
 }
+
+@media screen and (max-width: 450px) {
+  .details_box{
+    background-image: linear-gradient(90deg, var(--pretin), var(--brancoleve));
+    margin-top: 100px;
+    margin-bottom: 10px;
+    flex-direction: column;
+    width: 290px;
+
+  }
+  
+}

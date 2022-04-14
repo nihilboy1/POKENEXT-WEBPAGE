@@ -57,3 +57,11 @@
   font-size: 1.1rem;
   font-weight: 700;
 }
+
+@media screen and (max-width: 450px) {
+  .navbar_box {
+    width: 350px;
+    left: 175px;
+    justify-content: flex-start;
+  }
+}
