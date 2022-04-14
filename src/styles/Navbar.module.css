@@ -60,8 +60,22 @@
 
 @media screen and (max-width: 450px) {
   .navbar_box {
-    width: 350px;
-    left: 175px;
-    justify-content: flex-start;
+    padding-left: -50px;
+    width: 360px;
+    left: 180px;
+    justify-content: center;
+  }
+
+  .ul_box{
+    margin-bottom: 10px;
+  }
+
+  .pokeimg {
+    transform: rotate(25deg);
+  }
+
+  .link_item a {
+    padding: 2px 5px;
+    font-size: 0.9rem;
   }
 }
