@@ -68,7 +68,10 @@
   }
 
   .ul_box{
+    margin-left: 20px;
+    justify-content: flex-start;
     margin-bottom: 10px;
+    width: 200px;
   }
 
   .pokeimg {
