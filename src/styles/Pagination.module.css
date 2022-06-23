@@ -1,4 +1,4 @@
-.pagination_box{
+.pagination_box {
   display: flex;
   gap: 5px;
   padding: 5px;
@@ -10,13 +10,13 @@
   align-items: center;
 }
 
-.span_box{
+.span_box {
   font-size: 0.7rem;
   font-weight: 600;
   text-decoration: underline;
 }
 
-.button_box{
+.button_box {
   background-color: transparent;
   border: 1px solid var(--vermelho);
   border-radius: 5px;
@@ -25,29 +25,33 @@
   text-shadow: 1px 1px 1px var(--pretin);
   cursor: pointer;
   font-size: 0.7rem;
-
+  width: 1.4rem;
+  text-align: center;
 }
 
-.button_box:hover{
+.button_box:hover {
   color: var(--pretin);
   text-shadow: 2px 2px 1px var(--bancoleve);
   background-color: var(--vermelho);
   font-weight: 600;
 }
 
-.button_box:focus{
+.button_box:focus {
   color: var(--brancoleve);
 
   background-color: var(--vermelho);
   font-weight: 600;
-  
 }
 
 @media screen and (max-width: 390px) {
-
-  .pagination_box{
+  .pagination_box {
     flex-direction: column;
     padding: 0;
     left: 5px;
+  }
+
+  .button_box {
+    width: 1.5rem;
+    font-size: 0.7rem;
   }
 }

@@ -1,4 +1,3 @@
-import React from 'react'
 import styles from '../styles/Clouds.module.css'
 
 const Clouds = () => {
