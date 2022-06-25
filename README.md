@@ -9,7 +9,7 @@ Visualize o projeto:
 Na construção desses projetos, foram utilizadas as seguintes linguagens, libs e frameworks
 - HTML
 - CSS
-- Typescript
+- Javascript
 - React
 - Next.js
 
