@@ -4,7 +4,6 @@ import styles from "../styles/Pagination.module.css"
 const Pagination = ({ pages, setCurrentPage }) => {
   return (
     <div className={styles.pagination_box}>
-      <span className={styles.span_box}>Pages:</span>
       {Array.from(Array(pages), (item, index) => {
         return (
           <button
