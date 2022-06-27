@@ -1,4 +1,4 @@
-<h1>POKENEXT WEBPAGE 🤘</h1>
+<h1>🚀 | POKENEXT WEBPAGE</h1>
 <h3>
   Página criada em uma aula de Next.js do
   <a href="https://www.youtube.com/c/MatheusBattisti">Matheus Battisti</a> e
