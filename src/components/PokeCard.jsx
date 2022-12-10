@@ -8,7 +8,7 @@ const PokeCard = props => {
       <li className={styles.pokemon_li}>
         <a target="_blank">
           <Image
-            src={`https://cdn.traction.one/pokedex/pokemon/${props.poke.id}.png`}
+            src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${props.poke.id}.png`}
             width="130"
             height="130"
             alt={props.poke.name}

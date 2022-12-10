@@ -38,7 +38,7 @@ const PokemonId = props => {
     <div className={styles.details_box}>
       <div className={styles.image_box}>
         <Image
-          src={`https://cdn.traction.one/pokedex/pokemon/${props.pokemon.id}.png`}
+          src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${props.pokemon.id}.png`}
           width="205"
           height="205"
           className={styles.pokemon_image}
