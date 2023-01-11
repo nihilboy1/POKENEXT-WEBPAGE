@@ -1,8 +1,8 @@
-import Image from 'next/image'
-import Link from 'next/link'
-import styles from '../styles/PokeCard.module.css'
+import Image from "next/image";
+import Link from "next/link";
+import styles from "../styles/PokeCard.module.css";
 
-const PokeCard = props => {
+const PokeCard = (props) => {
   return (
     <Link href={`/pokemon/${props.poke.id}`} passHref={true}>
       <li className={styles.pokemon_li}>
@@ -22,7 +22,7 @@ const PokeCard = props => {
         </a>
       </li>
     </Link>
-  )
-}
+  );
+};
 
-export default PokeCard
+export default PokeCard;
