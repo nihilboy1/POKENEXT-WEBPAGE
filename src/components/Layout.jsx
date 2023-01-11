@@ -1,9 +1,8 @@
-import React from 'react'
-import Navbar from './Navbar'
-import Footer from './Footer'
-import Head from 'next/head'
+import Navbar from "./Navbar";
+import Footer from "./Footer";
+import Head from "next/head";
 
-const Layout = props => {
+const Layout = (props) => {
   return (
     <>
       <Head>
@@ -14,7 +13,7 @@ const Layout = props => {
       <main className="main_container">{props.children}</main>
       <Footer />
     </>
-  )
-}
+  );
+};
 
-export default Layout
+export default Layout;

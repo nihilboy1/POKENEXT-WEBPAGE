@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 :root {
   --vermelho: #af0609;
   --pretin: rgba(0, 0, 0, 0.623);
@@ -12,9 +12,9 @@
   outline: none;
   border: none;
   box-sizing: border-box;
-  font: 300 18px 'Poppins', sans-serif;
+  font: 300 18px "Poppins", sans-serif;
   color: var(--pretin);
-  transition: all 400ms;
+  transition: all 0.4s;
 }
 
 body {
@@ -26,7 +26,6 @@ body {
   flex-direction: column;
   transition: none;
   overflow-x: hidden;
-
 }
 
 .main_container {

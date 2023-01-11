@@ -1,5 +1,4 @@
-import React from 'react'
-import styles from '../styles/Footer.module.css'
+import styles from "../styles/Footer.module.css";
 
 const Footer = () => {
   return (
@@ -8,7 +7,7 @@ const Footer = () => {
         <span className={styles.footer_span}>PokeNext</span> 2022 &copy;
       </p>
     </footer>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

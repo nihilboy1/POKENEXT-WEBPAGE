@@ -1,14 +1,12 @@
-import React from 'react'
-import Link from 'next/link'
-import Image from 'next/image'
-import styles from '../styles/Navbar.module.css'
+import Link from "next/link";
+import styles from "../styles/Navbar.module.css";
 
 const Navbar = () => {
   return (
     <nav className={styles.navbar_box}>
       <div className={styles.logotext_box}>
         <Link href="/" passHref={true}>
-          <Image
+          <img
             src="/images/pokedex.png"
             alt="Logo pokebola"
             width="75"
@@ -31,7 +29,7 @@ const Navbar = () => {
         </li>
       </ul>
     </nav>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;

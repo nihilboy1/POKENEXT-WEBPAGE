@@ -3,9 +3,9 @@ import styles from "../../styles/PokemonId.module.css";
 import axios from "axios";
 
 export async function getStaticPaths() {
-  const maxPokemons = 251;
-  const apiUrl = "https://pokeapi.co/api/v2/pokemon/";
-  const { data } = await axios.get(`${apiUrl}/?limit=${maxPokemons}`);
+  const MAXPOKEMONS = 251;
+  const apiUrl = "https://pokeapi.co/api/v2/pokemon";
+  const { data } = await axios.get(`${apiUrl}/?limit=${MAXPOKEMONS}`);
 
   //params
   const paths = data.results.map((poke, index) => {
@@ -21,10 +21,10 @@ export async function getStaticPaths() {
   };
 }
 
-export async function getStaticProps({ params }) {
-  const id = params.pokemonid;
+export async function getStaticProps(paths) {
+  const id = paths.params.pokemonid;
   const { data } = await axios.get(
-    `https://pokeapi.co/api/v2/pokemon/${id}?fields=name,id,types,height,weight`
+    `https://pokeapi.co/api/v2/pokemon/${id}?fields=name,id,types,height,weight,sprites`
   );
 
   return {
@@ -34,13 +34,15 @@ export async function getStaticProps({ params }) {
   };
 }
 
-const PokemonId = ({ pokemon }) => {
-  const { id, name, types, height, weight } = pokemon;
+const PokemonId = ({ pokemon, image }) => {
+  const { id, name, types, height, weight, sprites } = pokemon;
+  console.log();
+
   return (
     <div className={styles.details_box}>
       <div className={styles.image_box}>
         <Image
-          src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${id}.png`}
+          src={sprites.front_default}
           width="205"
           height="205"
           className={styles.pokemon_image}

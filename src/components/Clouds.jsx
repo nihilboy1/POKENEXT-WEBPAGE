@@ -1,4 +1,4 @@
-import styles from '../styles/Clouds.module.css'
+import styles from "../styles/Clouds.module.css";
 
 const Clouds = () => {
   return (
@@ -23,7 +23,7 @@ const Clouds = () => {
         <div className={styles.cloud}></div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Clouds
+export default Clouds;

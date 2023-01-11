@@ -1,4 +1,4 @@
-.pokemon_li{
+.pokemon_li {
   transition: all 400ms;
   display: flex;
   flex-direction: column;
@@ -14,38 +14,34 @@
   box-shadow: 1px 1px 1px var(--pretin);
 }
 
-.poke_image{
+.poke_image {
   cursor: pointer;
 }
 
-
-
-.pokemon_li:hover{
+.pokemon_li:hover {
   border-right: 1px solid var(--pretin);
   border-bottom: 1px solid var(--pretin);
   box-shadow: 3px 4px 5px var(--pretin);
   background-color: var(--brancoleve);
 }
 
-.pokemon_link{
+.pokemon_link {
   margin-top: 5px;
   text-decoration: none;
   display: flex;
   gap: 5px;
 }
 
-.pokemon_link h3{
+.pokemon_link h3 {
   text-transform: capitalize;
   font-weight: 600;
-
 }
 
-.pokemon_link:hover h3{
- color: var(--azulzin);
- font-weight: 700;
-
-}
-
-.pokemon_link:hover p{
+.pokemon_link:hover h3 {
   color: var(--azulzin);
- }
+  font-weight: 700;
+}
+
+.pokemon_link:hover p {
+  color: var(--azulzin);
+}
