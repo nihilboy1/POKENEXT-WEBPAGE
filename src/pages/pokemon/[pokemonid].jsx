@@ -1,6 +1,6 @@
-import Image from "next/image";
 import styles from "../../styles/PokemonId.module.css";
 import axios from "axios";
+import { BackgroundImage } from "../../components/BackgroundImage";
 
 export async function getStaticPaths() {
   const MAXPOKEMONS = 251;
@@ -24,7 +24,7 @@ export async function getStaticPaths() {
 export async function getStaticProps(paths) {
   const id = paths.params.pokemonid;
   const { data } = await axios.get(
-    `https://pokeapi.co/api/v2/pokemon/${id}?fields=name,id,types,height,weight,sprites`
+    `https://pokeapi.co/api/v2/pokemon/${id}?fields=name,id,types,height,weight,sprites,stats`
   );
 
   return {
@@ -34,43 +34,68 @@ export async function getStaticProps(paths) {
   };
 }
 
-const PokemonId = ({ pokemon, image }) => {
-  const { id, name, types, height, weight, sprites } = pokemon;
-  console.log();
+const PokemonId = ({ pokemon }) => {
+  const { id, name, types, height, weight, sprites, stats } = pokemon;
 
   return (
-    <div className={styles.details_box}>
-      <div className={styles.image_box}>
-        <Image
-          src={sprites.front_default}
-          width="205"
-          height="205"
-          className={styles.pokemon_image}
-          alt={name}
-        />
+    <>
+      <BackgroundImage />
+      <div className={styles.detailsBox}>
+        <div className={styles.content}>
+          <div className={styles.imageBox}>
+            <span className={styles.pokeName}>{name}</span>
+            <img
+              src={sprites.front_default}
+              className={styles.pokemon_image}
+              alt={`Foto do ${name}`}
+            />
+          </div>
+          <div className={styles.infosBox}>
+            <section className={styles.pokeStats}>
+              <p>ID: </p>
+              <span>#{id}</span>
+            </section>
+            <section className={styles.pokeStats}>
+              <p>HP:</p>
+              <span>{stats[0].base_stat}</span>
+            </section>
+            <section className={styles.pokeStats}>
+              <p>Attack:</p>
+              <span>{stats[1].base_stat}</span>
+            </section>
+            <section className={styles.pokeStats}>
+              <p>Defense:</p>
+              <span>{stats[2].base_stat}</span>
+            </section>
+            <section className={styles.pokeStats}>
+              <p>Speed:</p>
+              <span>{stats[5].base_stat}</span>
+            </section>
+            <section className={styles.pokeStats}>
+              <p>Type:</p>
+              {types.map(({ type }, index) => {
+                return (
+                  <span
+                    className={`${styles.type} ${styles["type" + type.name]}`}
+                    key={index}
+                  >
+                    {type.name}
+                  </span>
+                );
+              })}
+            </section>
+            <section className={styles.pokeStats}>
+              <p>Height: </p>
+              <span>{height}0cm</span>
+            </section>
+            <section className={styles.pokeStats}>
+              <p>Weight: </p>
+              <span>{weight / 10}kg</span>
+            </section>
+          </div>
+        </div>
       </div>
-      <div className={styles.text_detail_box}>
-        <p className={styles.poke_name}>
-          <span className={styles.poke_name}>#{id} </span>
-          {name}
-        </p>
-        <p className={styles.poke_type}>
-          Type:
-          {types.map(({ type }, index) => {
-            return (
-              <p
-                className={`${styles.type} ${styles["type_" + type.name]}`}
-                key={index}
-              >
-                {type.name}
-              </p>
-            );
-          })}
-        </p>
-        <p className={styles.poke_stats}>Height: {height}0cm</p>
-        <p className={styles.poke_stats}>Weight: {weight / 10}kg</p>
-      </div>
-    </div>
+    </>
   );
 };
 

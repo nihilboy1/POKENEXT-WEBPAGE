@@ -1,27 +1,32 @@
 .paginationBox {
   display: flex;
   flex-direction: column;
-  border-radius: 5px;
+  border-radius: 0.313rem;
   position: fixed;
-  top: 135px;
-  left: 10px;
+  top: 9.375rem;
+  left: 0.625rem;
   z-index: 1;
   align-items: center;
 }
 .innerPaginationBox {
-  margin-top: 5px;
+  margin-top: 0.313rem;
   display: flex;
   justify-content: center;
-  gap: 5px;
+  gap: 0.313rem;
   flex-wrap: wrap;
   max-width: 12rem;
 }
 
+.pages {
+  font-family: "Press Start 2P", cursive;
+  font-size: 0.8rem;
+}
+
 .buttonBox {
   background-color: transparent;
-  border: 1px solid var(--vermelho);
-  border-radius: 5px;
-  padding: 1px 6px;
+  border: 1px solid var(--pretin);
+  border-radius: 6px;
+  padding: 0.2rem;
   color: var(--brancoleve);
   text-shadow: 1px 1px 1px var(--pretin);
   cursor: pointer;
@@ -33,43 +38,39 @@
 .buttonBox:hover {
   color: var(--pretin);
   text-shadow: 2px 2px 1px var(--bancoleve);
-  background-color: var(--vermelho);
+  background-color: var(--azulzinleve);
   font-weight: 600;
+  border: 1px solid var(--azulzinleve);
 }
 
 .active {
   color: var(--brancoleve);
-  background-color: var(--vermelho);
+  background-color: var(--azulzin);
+  border: 1px solid var(--pretin);
   font-weight: 600;
 }
 
-@media screen and (max-width: 1220px) {
-  .pagination_box {
-    padding: 0;
-    left: 5px;
-  }
-
-  .innerPagination_box {
-    flex-direction: column;
-    max-height: 10rem;
-    width: 3.5rem;
-  }
-}
-
-@media screen and (max-width: 1250px) {
+@media screen and (max-width: 1150px) {
   .paginationBox {
     padding: 0;
-    left: 15px;
+    top: 11.58rem;
+    left: 0.625rem;
   }
 
   .innerPaginationBox {
     flex-direction: column;
-    max-height: 9rem;
+    max-height: 12rem;
     width: 3.5rem;
   }
 
   .buttonBox {
     width: 1.5rem;
     font-size: 0.7rem;
+  }
+}
+
+@media screen and (max-width: 826px) {
+  .paginationBox {
+    top: 0.5rem;
   }
 }

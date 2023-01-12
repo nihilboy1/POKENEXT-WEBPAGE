@@ -1,16 +1,18 @@
-.content_box {
+.contentBox {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 380px;
   justify-content: space-between;
 }
 
-.codedby {
-  font-weight: 600;
+.codedBy {
+  text-align: center;
+  font-weight: bold;
 }
 
-.spannihil a:hover {
-  color: var(--azulzin);
+.spanNihil a:hover {
+  color: var(--amarelopika);
+  text-shadow: 1px 1px 3px var(--pretin);
   font-weight: 600;
+  font-size: 1.25rem;
 }

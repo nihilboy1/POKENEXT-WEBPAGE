@@ -1,10 +1,10 @@
-.background_wrap {
+.backgroundWrap {
   bottom: 0;
   left: 0;
   height: 100vh;
-  padding-top: 50px;
-  position: fixed;
+  padding-top: 3.125rem;
   right: 0;
+  position: absolute;
   top: 0;
   z-index: -1;
 }
@@ -13,7 +13,7 @@
 
 @keyframes animateCloud {
   0% {
-    margin-left: -1000px;
+    margin-left: -62.5rem;
   }
   100% {
     margin-left: 100%;
@@ -22,69 +22,71 @@
 
 /* ANIMATIONS */
 
-.x1 {
+.cloud1 {
   animation: animateCloud 30s linear infinite;
   display: block;
   transform: scale(0.6);
-  margin-bottom: 50px;
+  margin-bottom: 6.25rem;
 }
 
-.x2 {
+.cloud2 {
   animation: animateCloud 25s linear infinite;
   display: block;
   transform: scale(0.5);
-  margin-bottom: 150px;
+  margin-bottom: 15.625rem;
 }
 
-.x3 {
+.cloud3 {
   animation: animateCloud 20s linear infinite;
   display: block;
   transform: scale(0.4);
-  margin-bottom: 250px;
+  margin-bottom: 21.875rem;
 }
 
-.x4 {
+.cloud4 {
   animation: animateCloud 35s linear infinite;
   display: block;
   transform: scale(0.3);
-  margin-bottom: 350px;
+  margin-bottom: 31.25rem;
 }
 
-.x5 {
+.cloud5 {
   animation: animateCloud 40s linear infinite;
   display: block;
   transform: scale(0.7);
-  margin-bottom: 450px;
+  margin-bottom: 40.625rem;
 }
 
 /* OBJECTS */
 
 .cloud {
   background: linear-gradient(to top, #fff, #f1f1f1);
-  border-radius: 100px;
-  box-shadow: 0 8px 5px rgba(0, 0, 0, 0.1);
-  height: 120px;
+  border-radius: 6.25rem;
+  height: 7.5rem;
+  box-shadow: 0 3px 5px var(--brancoleve);
   position: absolute;
-  width: 350px;
+  width: 21.875rem;
 }
 
 .cloud::before,
 .cloud::after {
+  box-shadow: 0 3px 5px var(--brancoleve);
   background: inherit;
   border-radius: inherit;
   content: "";
   position: absolute;
+  padding: 0.625rem;
 }
 .cloud::before {
   height: 100%;
   width: 100%;
-  left: -50px;
-  top: -50px;
+  left: -3.125rem;
+  top: -3.125rem;
 }
 
 .cloud::after {
   height: 80%;
   width: 80%;
-  left: -40px;
-  top: -40px;
+  left: -2.5rem;
+  top: -2.5rem;
 }

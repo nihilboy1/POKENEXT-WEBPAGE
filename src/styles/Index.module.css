@@ -1,0 +1,69 @@
+.homeContent {
+  margin-top: 1.25rem;
+  max-width: 65.625rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.homeTitleBox {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  margin-bottom: 5rem;
+}
+
+.homeTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family: "Press Start 2P", cursive;
+}
+
+.mainPokemonContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 41.563rem;
+  gap: 3.125rem;
+}
+
+.loadMorePokemons {
+  background-color: white;
+  padding: 0.625rem 1.125rem;
+  margin: 1.25rem 0rem;
+  border-radius: 0.938rem;
+  font-weight: bold;
+}
+
+
+.loadMorePokemons:disabled {
+  cursor: not-allowed;
+}
+.loadMorePokemons:hover {
+  color: var(--brancoleve);
+  background-color: var(--pretin);
+}
+
+@media screen and (max-width: 1250px) {
+  .homeContent {
+    padding: 0px 5.31rem;
+  }
+}
+
+@media screen and (max-width: 810px) {
+  .home_title_box {
+    margin-bottom: 5rem;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .home_title_box {
+    margin-top: 1.25rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .home_content {
+    padding: 0rem 5.625rem;
+  }
+}

@@ -1,10 +1,14 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap");
 :root {
-  --vermelho: #af0609;
-  --pretin: rgba(0, 0, 0, 0.623);
-  --brancoleve: #eafaff;
-  --azulzin: #1a8bbc;
-  --azulzinleve: #1a8bbc6e;
+  --vermelho: #d6232f;
+  --pretin: #000000d3;
+  --cinza: rgb(174, 174, 174);
+  --pretotrevas: black;
+  --brancoleve: #ffffffd7;
+  --brancofull: white;
+  --azulzin: #078bc0;
+  --azulzinleve: #078cc063;
+  --amarelopika: #efe206;
 }
 * {
   margin: 0;
@@ -12,32 +16,42 @@
   outline: none;
   border: none;
   box-sizing: border-box;
-  font: 300 18px "Poppins", sans-serif;
+  font: 400 16px "Rubik", sans-serif;
   color: var(--pretin);
-  transition: all 0.4s;
+  transition: 0.4s;
+}
+
+.backgroundImage {
+  position: fixed;
+  z-index: -10;
+  height: 125vh;
+  width: 100vw;
+  top: 0;
+  transition: none;
 }
 
 body {
-  background-image: url("/images/background.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   transition: none;
   overflow-x: hidden;
 }
 
-.main_container {
-  margin-top: 15px;
+.mainContainer {
+  margin-top: 0.93rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 91vh;
+  min-height: 90vh;
 }
 
-@media screen and (max-width: 1250px) {
-  .main_container {
+button {
+  cursor: pointer;
+  background-color: transparent;
+}
+
+@media screen and (max-width: 1150px) {
+  .mainContainer {
     margin-top: 150px;
   }
 }

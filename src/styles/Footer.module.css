@@ -1,15 +1,15 @@
-.footer_box {
-  padding: 10px;
+.footerBox {
+  padding: 1rem;
   display: flex;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.685);
+  background-color: var(--pretin);
 }
 
-.footer_text {
+.footerText {
   color: var(--brancoleve);
 }
 
-.footer_span {
+.footerSpan {
   font-weight: 700;
   color: var(--brancoleve);
 }

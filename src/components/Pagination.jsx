@@ -1,10 +1,10 @@
 import styles from "../styles/Pagination.module.css";
 
-const Pagination = ({ totalPages, setCurrentPage, currentPage }) => {
+const Pagination = ({ totalPages, setCurrentPage, currentPage, ref }) => {
   // return pagination component
   return (
-    <div className={styles.paginationBox}>
-      <p>Pages</p>
+    <div ref={ref} className={styles.paginationBox}>
+      <span className={styles.pages}>Pages</span>
       <div className={styles.innerPaginationBox}>
         {createPaginationButtons(totalPages, setCurrentPage, currentPage)}
       </div>

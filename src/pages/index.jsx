@@ -1,10 +1,11 @@
 import axios from "axios";
 import Image from "next/image";
-import styles from "../styles/Home.module.css";
+import styles from "../styles/Index.module.css";
 import PokeCard from "../components/PokeCard";
 import Clouds from "../components/Clouds";
+
 import { useState } from "react";
-import Pagination from "../components/Pagination";
+import { BackgroundImage } from "../components/BackgroundImage";
 
 export async function getStaticProps() {
   const MAXPOKEMONS = 251;
@@ -34,15 +35,12 @@ export default function Home({ pokemons, quantiItens }) {
   const currentItens = pokemons.slice(startIndex, endIndex);
 
   return (
-    <div className={styles.home_content}>
+    <div className={styles.homeContent}>
       <Clouds />
-      <Pagination
-        totalPages={pages}
-        setCurrentPage={setCurrentPage}
-        currentPage={currentPage}
-      />
-      <div className={styles.home_title_box}>
-        <h1 className={styles.home_title}>PokeNext</h1>
+      <BackgroundImage />
+
+      <div className={styles.homeTitleBox}>
+        <h1 className={styles.homeTitle}>PokeNext</h1>
         <Image
           src="/images/pokeball.png"
           width={50}
@@ -50,11 +48,20 @@ export default function Home({ pokemons, quantiItens }) {
           alt="Pokebola imagem"
         ></Image>
       </div>
-      <ul className={styles.main_pokemon_container}>
+      <ul className={styles.mainPokemonContainer}>
         {currentItens.map((poke) => {
           return <PokeCard key={poke.id} poke={poke} />;
         })}
       </ul>
+      <button
+        disabled={itensPerPage >= 251 ? true : false}
+        className={styles.loadMorePokemons}
+        onClick={() => setItensPerPage(itensPerPage + 20)}
+      >
+        {itensPerPage >= 251
+          ? "Todos os pokemons foram carregados"
+          : "Carregar mais pokemons"}
+      </button>
     </div>
   );
 }

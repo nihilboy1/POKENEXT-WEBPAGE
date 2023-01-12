@@ -1,85 +1,46 @@
-.navbar_box {
+.headerImage {
   position: fixed;
-  left: 248px;
-  transform: translate(-50%);
-  display: flex;
-  justify-content: space-around;
-  background-color: var(--vermelho);
-  width: 500px;
-  border-radius: 0px 0px 100px 5px;
+  height: 8.75rem;
   z-index: 1;
-  box-shadow: 1px 1px 5px var(--pretin);
+  top: 0.188rem;
+  left: 0.188rem;
 }
 
-.ul_box {
-  width: 180px;
+.buttonsBox {
   display: flex;
-  align-items: center;
-  justify-content: space-around;
-  list-style: none;
-  gap: 10px;
+  gap: 2rem;
+  position: fixed;
+  z-index: 1;
+  left: 11.65rem;
+  top: 6.1rem;
 }
-.link_item a {
-  padding: 5px 10px;
-  border-right: 1px solid var(--pretin);
-  border-bottom: 1px solid var(--pretin);
-  border-radius: 5px;
-  font-weight: 600;
-  text-decoration: none;
-  color: var(--brancoleve);
+
+.button {
+  padding: 0.5rem;
+  border-radius: 0.8rem;
   font-size: 0.8rem;
-}
-
-.link_item a:hover {
-  color: var(--pretin);
-  background-color: var(--brancoleve);
-  font-weight: 700;
-  border-right: 1px solid var(--pretin);
-  border-bottom: 1px solid var(--pretin);
-  box-shadow: 4px 1px 5px var(--pretin);
-  background-color: var(--brancoleve);
-}
-
-.logotext_box {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 10px;
-  gap: 10px;
-  margin-bottom: 0px;
-}
-
-.pokeimg {
-  cursor: pointer;
-}
-
-.title {
   color: var(--brancoleve);
-  font-size: 1.3rem;
-  font-weight: 700;
+  font-weight: bold;
+  font-family: "Press Start 2P", cursive;
 }
 
-@media screen and (max-width: 450px) {
-  .navbar_box {
-    padding-left: -50px;
-    width: 360px;
-    left: 180px;
-    justify-content: center;
+.button:hover {
+  color: var(--pretin);
+  background-color: var(--azulzin);
+}
+
+@media screen and (max-width: 826px) {
+  .headerImage {
+    position: absolute;
+    top: 1rem;
+    left: 50%;
+    transform: translate(-50%, -0%);
   }
 
-  .ul_box {
-    margin-left: 45px;
-    justify-content: flex-start;
-    margin-bottom: 10px;
-    width: 200px;
-  }
-
-  .pokeimg {
-    transform: rotate(25deg);
-  }
-
-  .link_item a {
-    padding: 2px 5px;
-    font-size: 0.7rem;
+  .buttonsBox {
+    position: absolute;
+    left: 60%;
+    top: 18%;
+    transform: translate(-50%, -0%);
   }
 }

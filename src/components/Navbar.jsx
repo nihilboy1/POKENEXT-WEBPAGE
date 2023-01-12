@@ -2,33 +2,23 @@ import Link from "next/link";
 import styles from "../styles/Navbar.module.css";
 
 const Navbar = () => {
+
   return (
-    <nav className={styles.navbar_box}>
-      <div className={styles.logotext_box}>
-        <Link href="/" passHref={true}>
-          <img
-            src="/images/pokedex.png"
-            alt="Logo pokebola"
-            width="75"
-            height="60"
-            className={styles.pokeimg}
-          />
+    <div>
+      <img
+        src="/images/header1.png"
+        alt="background do header"
+        className={styles.headerImage}
+      />
+      <div className={styles.buttonsBox}>
+        <Link href="/">
+          <button className={styles.button}>Home</button>
         </Link>
-        <h1 className={styles.title}>PokeNext</h1>
+        <Link href="/about">
+          <button className={styles.button}>About</button>
+        </Link>
       </div>
-      <ul className={styles.ul_box}>
-        <li className={styles.link_item}>
-          <Link href="/">
-            <a>Home</a>
-          </Link>
-        </li>
-        <li className={styles.link_item}>
-          <Link href="/about">
-            <a>About</a>
-          </Link>
-        </li>
-      </ul>
-    </nav>
+    </div>
   );
 };
 
