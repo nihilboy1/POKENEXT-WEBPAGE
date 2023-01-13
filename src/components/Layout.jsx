@@ -12,10 +12,7 @@ const Layout = (props) => {
           href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap"
           rel="stylesheet"
         ></link>
-        <link
-          href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
-          rel="stylesheet"
-        />
+
         <link
           href="https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@400;600&display=swap"
           rel="stylesheet"

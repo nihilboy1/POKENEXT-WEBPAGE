@@ -2,12 +2,11 @@ import axios from "axios";
 import Image from "next/image";
 import styles from "../styles/Index.module.css";
 import PokeCard from "../components/PokeCard";
-import Clouds from "../components/Clouds";
 
 import { useState } from "react";
 
 export async function getStaticProps() {
-  const MAXPOKEMONS = 251;
+  const MAXPOKEMONS = 387;
   const apiUrl = "https://pokeapi.co/api/v2/pokemon/";
   const { data } = await axios.get(`${apiUrl}?limit=${MAXPOKEMONS}`);
 
@@ -24,10 +23,13 @@ export async function getStaticProps() {
   };
 }
 
-export default function Home({ pokemons, quantiItens }) {
+export default function Home({ pokemons }) {
   const [itensPerPage, setItensPerPage] = useState(20);
   const [currentPage, setCurrentPage] = useState(1);
-  const pages = Math.ceil(quantiItens / itensPerPage);
+
+  function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
 
   const startIndex = (currentPage - 1) * itensPerPage;
   const endIndex = Math.min(startIndex + itensPerPage, pokemons.length);
@@ -35,8 +37,6 @@ export default function Home({ pokemons, quantiItens }) {
 
   return (
     <div className={styles.homeContent}>
-      <Clouds />
-
       <div className={styles.homeTitleBox}>
         <h1 className={styles.homeTitle}>PokeNext</h1>
         <Image
@@ -52,13 +52,21 @@ export default function Home({ pokemons, quantiItens }) {
         })}
       </ul>
       <button
-        disabled={itensPerPage >= 251 ? true : false}
+        disabled={itensPerPage >= 387 ? true : false}
         className={styles.loadMorePokemons}
         onClick={() => setItensPerPage(itensPerPage + 20)}
       >
-        {itensPerPage >= 251
-          ? "Todos os pokemons foram carregados"
-          : "Carregar mais pokemons"}
+        {itensPerPage >= 387
+          ? "The content ends here 😕"
+          : "Load more content 😎"}
+      </button>
+      <button
+        onClick={() => {
+          scrollToTop();
+        }}
+        className={styles.loadMorePokemons}
+      >
+        Voltar ao topo
       </button>
     </div>
   );

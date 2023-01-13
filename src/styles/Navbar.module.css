@@ -12,16 +12,16 @@
   position: fixed;
   z-index: 1;
   left: 11.65rem;
-  top: 6.1rem;
+  top: 5.8rem;
 }
 
 .button {
   padding: 0.5rem;
   border-radius: 0.8rem;
-  font-size: 0.8rem;
+  font-size: 1.2rem;
   color: var(--brancoleve);
   font-weight: bold;
-  font-family: "Press Start 2P", 'Sofia Sans', sans-serif;
+  font-family:  'Sofia Sans', sans-serif;
 }
 
 .button:hover {
@@ -40,7 +40,7 @@
   .buttonsBox {
     position: absolute;
     left: 60%;
-    top: 7rem;
+    top: 6.7rem;
     transform: translate(-50%, -0%);
   }
 }
@@ -53,5 +53,9 @@
   .buttonsBox {
     left: 63%;
     top: 5.5rem;
+  }
+
+  .button {
+    padding: 0.3rem
   }
 }

@@ -1,6 +1,7 @@
 .homeContent {
   margin-top: 1.25rem;
   max-width: 65.625rem;
+  min-width: 10rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -15,9 +16,9 @@
 }
 
 .homeTitle {
-  font-size: 1.5rem;
-  font-weight: 700;
-  font-family: "Press Start 2P", 'Sofia Sans', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 600;
+  font-family: 'Sofia Sans', sans-serif;
 }
 
 .mainPokemonContainer {

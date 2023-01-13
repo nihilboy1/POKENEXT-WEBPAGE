@@ -7,7 +7,7 @@
   --brancoleve: #ffffffd7;
   --brancofull: white;
   --azulzin: #078bc0;
-  --azulzinleve: #078cc063;
+  --azulzinleve: #79CAF9;
   --amarelopika: #efe206;
 }
 * {
@@ -15,10 +15,9 @@
   padding: 0;
   outline: none;
   border: none;
-  box-sizing: border-box;
   font: 400 16px "Rubik", sans-serif;
   color: var(--pretin);
-  transition: 0.4s;
+  transition: 0.2s;
 }
 
 /* .backgroundImage {
@@ -30,19 +29,10 @@
   transition: none;
 } */
 
-body,
-html {
-  display: flex;
+body {
   flex-direction: column;
   transition: none;
-  overflow-x: hidden;
-}
-
-body {
-  background-image: url("../../public/images/background.png");
-  background-position: top;
-  background-size:  cover;
-
+  background-color: var(--azulzinleve);
 }
 
 .mainContainer {
