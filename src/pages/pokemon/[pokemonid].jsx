@@ -43,16 +43,19 @@ const PokemonId = ({ pokemon }) => {
           <div className={styles.imageBox}>
             <a
               target="_blank"
+              rel="noreferrer"
               href={`https://pokemon.fandom.com/wiki/${name}`}
               className={styles.pokeName}
             >
               {name}
             </a>
-            <img
-              src={sprites.front_default}
-              className={styles.pokemon_image}
-              alt={`Foto do ${name}`}
-            />
+            <picture>
+              <img
+                src={sprites.front_default}
+                className={styles.pokemon_image}
+                alt={`Foto do ${name}`}
+              />
+            </picture>
           </div>
           <div className={styles.infosBox}>
             <section className={styles.pokeStats}>

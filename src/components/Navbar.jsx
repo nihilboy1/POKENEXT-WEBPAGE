@@ -4,11 +4,13 @@ import styles from "../styles/Navbar.module.css";
 const Navbar = () => {
   return (
     <div>
-      <img
-        src="/images/header1.png"
-        alt="background do header"
-        className={styles.headerImage}
-      />
+      <picture>
+        <img
+          src="/images/header1.png"
+          alt="background do header"
+          className={styles.headerImage}
+        />
+      </picture>
       <div className={styles.buttonsBox}>
         <Link href="/">
           <button className={styles.button}>Home</button>

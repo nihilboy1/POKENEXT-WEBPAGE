@@ -9,7 +9,11 @@ const About = () => {
           Coded by {""}
           <span className={styles.spanNihil}>
             <p>
-              <a target={`_blank`} href="https://github.com/nihilboy1">
+              <a
+                target="_blank"
+                href="https://github.com/nihilboy1"
+                rel="noreferrer"
+              >
                 @Nihilboy
               </a>
             </p>

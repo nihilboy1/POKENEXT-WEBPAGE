@@ -44,7 +44,7 @@ export default function Home({ pokemons }) {
           width={50}
           height={50}
           alt="Pokebola imagem"
-        ></Image>
+        />
       </div>
       <ul className={styles.mainPokemonContainer}>
         {currentItens.map((poke) => {
@@ -66,8 +66,7 @@ export default function Home({ pokemons }) {
         }}
         className={styles.scrollToTop}
       >
-        Scroll to top{" "}
-        <span class={styles.vertMove}>☝</span>
+        Scroll to top <span className={styles.vertMove}>☝</span>
       </button>
     </div>
   );

@@ -48,12 +48,14 @@ const PokeCard = ({ poke }) => {
         style={style}
       >
         <div>
-          <img
-            src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${poke.id}.png`}
-            width="130"
-            alt={poke.name}
-            className={styles.pokeImage}
-          />
+          <picture>
+            <img
+              src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${poke.id}.png`}
+              width="130"
+              alt={poke.name}
+              className={styles.pokeImage}
+            />
+          </picture>
 
           <a className={styles.pokemonNameBox}>
             <p>#{poke.id}</p>

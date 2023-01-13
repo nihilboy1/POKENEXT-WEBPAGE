@@ -114,6 +114,10 @@
   text-shadow: 1px 1px 5px var(--pretin);
 }
 
+.pokeName:hover{
+  color: var(--azulzin);
+}
+
 .pokeType {
   color: var(--brancoleve);
   text-transform: capitalize;
