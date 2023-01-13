@@ -5,7 +5,6 @@ import PokeCard from "../components/PokeCard";
 import Clouds from "../components/Clouds";
 
 import { useState } from "react";
-import { BackgroundImage } from "../components/BackgroundImage";
 
 export async function getStaticProps() {
   const MAXPOKEMONS = 251;
@@ -37,7 +36,6 @@ export default function Home({ pokemons, quantiItens }) {
   return (
     <div className={styles.homeContent}>
       <Clouds />
-      <BackgroundImage />
 
       <div className={styles.homeTitleBox}>
         <h1 className={styles.homeTitle}>PokeNext</h1>

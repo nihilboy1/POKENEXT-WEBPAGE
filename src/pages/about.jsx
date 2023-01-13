@@ -1,11 +1,9 @@
-import { BackgroundImage } from "../components/BackgroundImage";
 import styles from "../styles/About.module.css";
 import Image from "next/image";
 
 const About = () => {
   return (
     <>
-      <BackgroundImage />
       <div className={styles.contentBox}>
         <h1 className={styles.codedBy}>
           Coded by {""}

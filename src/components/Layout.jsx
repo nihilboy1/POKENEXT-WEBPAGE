@@ -16,6 +16,11 @@ const Layout = (props) => {
           href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
           rel="stylesheet"
         />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@400;600&display=swap"
+          rel="stylesheet"
+        />
+
         <link rel="shortcut icon" href="/images/favicon.ico" />
         <title>PokeNext</title>
       </Head>

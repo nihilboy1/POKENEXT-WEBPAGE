@@ -21,21 +21,28 @@
   transition: 0.4s;
 }
 
-.backgroundImage {
+/* .backgroundImage {
   position: fixed;
   z-index: -10;
   height: 125vh;
   width: 100vw;
   top: 0;
   transition: none;
-}
+} */
 
-body, html {
+body,
+html {
   display: flex;
   flex-direction: column;
   transition: none;
   overflow-x: hidden;
-  animation: none;
+}
+
+body {
+  background-image: url("../../public/images/background.png");
+  background-position: top;
+  background-size:  cover;
+
 }
 
 .mainContainer {

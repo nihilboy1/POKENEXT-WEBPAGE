@@ -21,7 +21,7 @@
   font-size: 0.8rem;
   color: var(--brancoleve);
   font-weight: bold;
-  font-family: "Press Start 2P", cursive;
+  font-family: "Press Start 2P", 'Sofia Sans', sans-serif;
 }
 
 .button:hover {
@@ -40,7 +40,7 @@
   .buttonsBox {
     position: absolute;
     left: 60%;
-    top: 20%;
+    top: 7rem;
     transform: translate(-50%, -0%);
   }
 }
@@ -52,6 +52,6 @@
 
   .buttonsBox {
     left: 63%;
-    top: 16.5%;
+    top: 5.5rem;
   }
 }

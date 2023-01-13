@@ -1,6 +1,5 @@
 import styles from "../../styles/PokemonId.module.css";
 import axios from "axios";
-import { BackgroundImage } from "../../components/BackgroundImage";
 
 export async function getStaticPaths() {
   const MAXPOKEMONS = 251;
@@ -39,7 +38,6 @@ const PokemonId = ({ pokemon }) => {
 
   return (
     <>
-      <BackgroundImage />
       <div className={styles.detailsBox}>
         <div className={styles.content}>
           <div className={styles.imageBox}>
