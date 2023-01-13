@@ -30,11 +30,12 @@
   transition: none;
 }
 
-body {
+body, html {
   display: flex;
   flex-direction: column;
   transition: none;
   overflow-x: hidden;
+  animation: none;
 }
 
 .mainContainer {

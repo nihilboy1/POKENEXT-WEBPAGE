@@ -40,7 +40,18 @@
   .buttonsBox {
     position: absolute;
     left: 60%;
-    top: 18%;
+    top: 20%;
     transform: translate(-50%, -0%);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .headerImage {
+    height: 7rem;
+  }
+
+  .buttonsBox {
+    left: 63%;
+    top: 16.5%;
   }
 }
