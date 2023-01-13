@@ -18,7 +18,7 @@
 .homeTitle {
   font-size: 2.5rem;
   font-weight: 600;
-  font-family: 'Sofia Sans', sans-serif;
+  font-family: "Sofia Sans", sans-serif;
 }
 
 .mainPokemonContainer {
@@ -33,10 +33,23 @@
   background-color: white;
   padding: 0.625rem 1.125rem;
   margin: 1.25rem 0rem;
-  border-radius: 0.938rem;
+  border-radius: 8px;
   font-weight: bold;
+  width: 14rem;
 }
 
+.scrollToTop {
+  background-color: white;
+  padding: 0.5rem;
+  border-radius: 8px;
+  font-weight: bold;
+  font-family: "Sofia Sans", sans-serif;
+  margin-bottom: 1rem;
+}
+
+.scrollToTop:hover {
+  padding: 0.5rem 1rem;
+}
 
 .loadMorePokemons:disabled {
   cursor: not-allowed;

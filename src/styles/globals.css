@@ -7,7 +7,7 @@
   --brancoleve: #ffffffd7;
   --brancofull: white;
   --azulzin: #078bc0;
-  --azulzinleve: #79CAF9;
+  --azulzinleve: #79caf9;
   --amarelopika: #efe206;
 }
 * {
@@ -46,6 +46,7 @@ body {
 button {
   cursor: pointer;
   background-color: transparent;
+  text-decoration: none;
 }
 
 @media screen and (max-width: 1150px) {

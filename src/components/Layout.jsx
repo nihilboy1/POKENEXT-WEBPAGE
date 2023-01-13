@@ -6,6 +6,7 @@ const Layout = (props) => {
   return (
     <>
       <Head>
+        <html lang="pt-br" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
         <link

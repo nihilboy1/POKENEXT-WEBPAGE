@@ -64,9 +64,9 @@ export default function Home({ pokemons }) {
         onClick={() => {
           scrollToTop();
         }}
-        className={styles.loadMorePokemons}
+        className={styles.scrollToTop}
       >
-        Voltar ao topo
+        Scroll to top 🔼
       </button>
     </div>
   );

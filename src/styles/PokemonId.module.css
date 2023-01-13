@@ -1,16 +1,21 @@
 .detailsBox {
   margin: 10rem 0rem 3rem 0rem;
-  padding: 0rem 2rem;
+  padding: 0.2rem 0.8rem;
   display: flex;
   align-items: center;
-  min-width: 50rem;
+  min-width: 48rem;
   height: 21rem;
   border-radius: 25px;
   background-color: var(--brancofull);
+
   -webkit-animation: flip-horizontal-bottom 0.4s
     cubic-bezier(0.455, 0.03, 0.515, 0.955) reverse both;
   animation: flip-horizontal-bottom 0.4s cubic-bezier(0.455, 0.03, 0.515, 0.955)
     reverse both;
+
+  -webkit-box-shadow: 0px 0px 300px 7px var(--brancoleve);
+  -moz-box-shadow: 0px 0px 300px 7px var(--brancoleve);
+  box-shadow: 0px 0px 300px 7px var(--brancoleve);
 }
 
 /* ----------------------------------------------
@@ -52,6 +57,7 @@
   flex: 1;
   border: 18px solid var(--cinza);
   border-radius: 16px;
+  min-width: 48rem;
 }
 
 .imageBox,
@@ -73,6 +79,7 @@
   filter: FlipH;
   -ms-filter: "FlipH";
   float: none;
+  margin-top: -2rem;
 }
 
 .infosBox {
@@ -99,10 +106,14 @@
   text-transform: capitalize;
   font-family: "Sofia Sans", sans-serif;
   color: var(--brancoleve);
-  margin-bottom: -1rem;
-  margin-top: 1rem;
-  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+  font-size: 1.3rem;
+  z-index: 5;
+  text-decoration: none;
 }
+
+
 
 .pokeType {
   color: var(--brancoleve);
@@ -226,8 +237,8 @@
   .detailsBox {
     flex-direction: column;
     min-width: 25rem;
-    min-height: 28rem;
-    padding: 1rem 2rem;
+    min-height: 29rem;
+    padding: 0.5rem 0.5rem;
   }
 
   .content {
@@ -244,7 +255,7 @@
 @media screen and (max-width: 650px) {
   .detailsBox {
     min-width: 18rem;
-    min-height: 35rem;
+    min-height: 37rem;
   }
 
   .content {
