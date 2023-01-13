@@ -6,7 +6,7 @@
   min-width: 48rem;
   height: 21rem;
   border-radius: 25px;
-  background-color: var(--brancofull);
+  background-color: var(--brancoleve);
 
   -webkit-animation: flip-horizontal-bottom 0.4s
     cubic-bezier(0.455, 0.03, 0.515, 0.955) reverse both;
@@ -104,16 +104,15 @@
 }
 .pokeName {
   text-transform: capitalize;
-  font-family: "Sofia Sans", sans-serif;
+  font-family: "Press Start 2P", cursive;
   color: var(--brancoleve);
   margin-bottom: 1rem;
   margin-top: 2rem;
   font-size: 1.3rem;
   z-index: 5;
   text-decoration: none;
+  text-shadow: 1px 1px 5px var(--pretin);
 }
-
-
 
 .pokeType {
   color: var(--brancoleve);
@@ -139,10 +138,12 @@
   font-weight: bold;
 }
 .pokeStats > span {
-  color: var(--pretin);
-  font-family: "Sofia Sans", sans-serif;
-  font-size: 1.4rem;
+  padding: 0.2rem;
+  color: var(--brancofull);
+  font-family: "Press Start 2P", cursive;
+  font-size: 1rem;
   margin-left: 0.3rem;
+  text-shadow: 1px 1px 5px var(--pretin);
 }
 
 .type {

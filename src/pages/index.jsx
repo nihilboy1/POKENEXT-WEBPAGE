@@ -66,7 +66,8 @@ export default function Home({ pokemons }) {
         }}
         className={styles.scrollToTop}
       >
-        Scroll to top 🔼
+        Scroll to top{" "}
+        <span class={styles.vertMove}>☝</span>
       </button>
     </div>
   );

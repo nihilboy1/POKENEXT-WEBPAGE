@@ -15,7 +15,7 @@ const Layout = (props) => {
         ></link>
 
         <link
-          href="https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@400;600&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
           rel="stylesheet"
         />
 

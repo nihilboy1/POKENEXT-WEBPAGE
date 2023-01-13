@@ -12,21 +12,24 @@
   position: fixed;
   z-index: 1;
   left: 11.65rem;
-  top: 5.8rem;
+  top: 6rem;
 }
 
 .button {
   padding: 0.5rem;
   border-radius: 0.8rem;
-  font-size: 1.2rem;
+  font-size: 0.9rem;
   color: var(--brancoleve);
   font-weight: bold;
-  font-family:  'Sofia Sans', sans-serif;
+  font-family: "Press Start 2P", cursive;
+  text-shadow: 2px 2px 5px var(--pretin);
+
 }
 
 .button:hover {
   color: var(--pretin);
   background-color: var(--azulzin);
+  text-shadow: none;
 }
 
 @media screen and (max-width: 826px) {
@@ -40,7 +43,7 @@
   .buttonsBox {
     position: absolute;
     left: 60%;
-    top: 6.7rem;
+    top: 6.9rem;
     transform: translate(-50%, -0%);
   }
 }
@@ -52,10 +55,11 @@
 
   .buttonsBox {
     left: 63%;
-    top: 5.5rem;
+    top: 5.7rem;
   }
 
   .button {
-    padding: 0.3rem
+    padding: 0.4rem;
+    font-size: 0.75rem;
   }
 }
